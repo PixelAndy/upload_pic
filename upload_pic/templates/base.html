@@ -1,3 +1,4 @@
+{% load staticfiles %}
 <!doctype html>
 <html lang="en">
 <head>
@@ -25,13 +26,13 @@ Content Text
 <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="first.jpg" alt="1st">
+            <img src="{% static 'first.jpg' %}" alt="1st">
         </div>
         <div class="carousel-item">
-            <img src="second.jpg" alt="2nd">
+            <img src="{% static 'second.jpg' %}" alt="2nd">
         </div>
         <div class="carousel-item">
-            <img src="third.png" alt="3rd">
+            <img src="{% static 'third.png' %}" alt="3rd">
         </div>
     </div>
 </div>
